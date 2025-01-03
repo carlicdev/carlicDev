@@ -25,6 +25,25 @@ const inter = Inter({
 export const metadata = {
   title: "Soy Carlic",
   description: "Masculinidad, Transformación Personal y Estilo de Vida.",
+  openGraph: {
+    title: 'Soy Carlic',
+    description: 'Masculinidad, Transformación Personal y Estilo de Vida.',
+    url: 'https://www.soycarlic.com',
+    images: [
+      {
+        url: 'https://www.soycarlic.com',
+        width: 1200,
+        height: 630,
+        alt: 'soy carlic',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Soy Carlic',
+    description: 'Masculinidad, Transformación Personal y Estilo de Vida.',
+    images: ['https://www.soycarlic.com'],
+  },
 };
 
 export default function RootLayout({ children }) {
