@@ -31,7 +31,7 @@ export const metadata = {
     url: 'https://www.soycarlic.com',
     images: [
       {
-        url: 'https://www.soycarlic.com',
+        url: 'https://www.soycarlic.com/ctablog.png',
         width: 1200,
         height: 630,
         alt: 'soy carlic',
@@ -42,7 +42,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Soy Carlic',
     description: 'Masculinidad, Transformación Personal y Estilo de Vida.',
-    images: ['https://www.soycarlic.com'],
+    images: ['https://www.soycarlic.com/ctablog.png'],
   },
 };
 
