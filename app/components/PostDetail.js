@@ -42,7 +42,7 @@ const PostDetail = ({post}) => {
           case 'bulleted-list':
             return <div key={index} className='mb-4 p-4 bg-black border-l-4  border-orange-700'>{
                 obj.children.map(({children}, index) => (
-                    <p key={index} className='flex items-start text-lg font-bold mb-1 text-justify '><span className='mt-1'><TbPointFilled/></span>{children[0].children[0].text}</p>
+                    <p key={index} className='flex items-start text-lg font-bold mb-1 text-justify'><span className='mt-1'><TbPointFilled/></span>{children[0].children[0].text}</p>
                 ))
             }</div>
           case 'block-quote':
