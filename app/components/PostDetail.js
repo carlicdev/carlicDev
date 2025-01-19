@@ -4,6 +4,7 @@ import { TbPointFilled } from 'react-icons/tb'
 import ShareButtons from './ShareButtons';
 import Link from 'next/link';
 import Image from 'next/image';
+import { BiSolidPyramid } from 'react-icons/bi';
 
 const PostDetail = ({post}) => {
 
@@ -74,13 +75,24 @@ const PostDetail = ({post}) => {
         <img src={post.featuredImage.url} alt='postImg' className='w-full h-[400px] rounded-t-lg mb-4'/>
         <div className='p-4 rounded-lg'>
             <h2 className='text-center text-4xl lg:text-5xl font-black mb-2 text-special capitalize'>{post.title}</h2>
-            {/* <div className='flex max-w-2xl mx-auto w-full mb-5 px-5'>
-                <p className='ml-0 mr-auto'>{styleDate(post.createdAt)}</p>
-                <div className='flex gap-2 ml-auto mr-0'>
-                    <Image src={'/man.png'} alt={'carlic'} width={25} height={25} />
-                    <p>{post.author.name}</p>
+            <div className='flex w-full mb-5 px-5 items-center'>
+              <div className='flex gap-2 items-center'>
+                <span className='text-5xl'>
+                  <BiSolidPyramid />
+                </span>
+                <div className='flex flex-col'>
+                  <p>{post.author.name}</p>
+                  <p className='ml-0 mr-auto text-gray-400'>{styleDate(post.createdAt)}</p>
                 </div>
-            </div> */}
+              </div>
+              <div className='mr-0 ml-auto'>
+                <ShareButtons 
+                                url={`www.soycarlic.com/post/${post.slug}`} 
+                                title={post.title}
+                                summary={post.excerpt}
+                />
+              </div>
+            </div>
             <div className='p-5'>
                 {
                     post.content.raw.children.map((typeObj, index) => {
