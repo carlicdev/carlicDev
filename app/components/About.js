@@ -14,8 +14,8 @@ const About = () => {
         <div id={'about'} className='max-w-7xl mx-auto mb-10 p-5'>
             <div className='flex flex-wrap mt-10'>
                 <div className='w-full lg:w-1/3 flex flex-col items-center justify-center mb-10 lg:mb-0'>
-                    <div className='mb-10 rounded-full'>
-                        <Image alt={'carlic'} src={'/carlic.jpg'} width={350} height={350} className='rounded-full'/>
+                    <div className='mb-10 rounded-lg'>
+                        <Image alt={'carlic'} src={'/carlic2.jpg'} width={350} height={350} className='rounded-lg'/>
                     </div>
                     <div className='flex justify-center gap-5'>
                         <span className='bg-orange-700 p-2 rounded-full text-2xl'>
