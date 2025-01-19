@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
+import { BiSolidPyramid } from "react-icons/bi";
+
 
 const Navbar = () => {
   return (
@@ -7,7 +9,12 @@ const Navbar = () => {
         <div className='max-w-7xl mx-auto'>
             <div className='px-2 lg:px-0 flex  py-4'>
                 <Link href={'/'}>
-                    <p className='text-logo uppercase font-ligth text-2xl tracking-widest'>Carlic</p>
+                <div className='flex gap-2 items-center'>
+                    <span className='text-4xl'>
+                        <BiSolidPyramid />
+                    </span>
+                    <p className='font-ligth text-2xl tracking-tighter'>Carlic</p>
+                </div>
                 </Link>
                 <div className='mr-0 ml-auto'>
                     <Link href={'/blog'}>

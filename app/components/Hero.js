@@ -1,10 +1,14 @@
 import React from 'react'
 import Subscribe from './Subscribe'
+import { BiSolidPyramid } from 'react-icons/bi'
+
 
 const Hero = () => {
   return (
     <div className='max-w-lg my-14 mx-auto flex flex-col gap-7'>
-        <p className='text-logo uppercase font-ligth text-2xl tracking-widest text-center'>Carlic</p>
+        <span className='text-5xl mx-auto'>
+          <BiSolidPyramid />
+        </span>
         <div className='flex flex-col items-center'>
             <p className='font-black text-5xl md:text-6xl tracking-tighter text-center capitalize'>libre.</p>
             <p className='font-black text-5xl md:text-6xl tracking-tighter text-center capitalize'>indomable.</p>
