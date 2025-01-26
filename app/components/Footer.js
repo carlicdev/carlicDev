@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaXTwitter, FaLinkedinIn, FaInstagram, FaRegRegistered, FaYoutube } from "react-icons/fa6";
 import Subscribe from './Subscribe';
+import { BiSolidPyramid } from 'react-icons/bi';
 
 const Footer = () => {
   return (
@@ -8,7 +9,12 @@ const Footer = () => {
         <div className='max-w-7xl mx-auto px-5 lg:px-0'>
             <div className='flex flex-wrap py-10 lg:py-20'>
                 <div className='w-full lg:w-1/2 mb-10 lg:mb-0 flex flex-col gap-1 lg:pr-40'>
-                    <p className='text-logo uppercase font-ligth text-2xl tracking-widest'>Carlic</p>
+                    <div className='flex gap-2 items-center'>
+                        <span className='text-4xl'>
+                            <BiSolidPyramid />
+                        </span>
+                        <p className='font-ligth text-2xl tracking-tighter'>Carlic</p>
+                    </div>
                     <p className='font-black text-2xl tracking-tight'>Libre. Indomable. Indestructible.</p>
                     <p className='text-xl'>Escribo sobre Masculinidad, Transformación Personal y Diseño de Estilo de Vida.</p>
                 </div>
